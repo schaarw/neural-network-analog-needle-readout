@@ -1,9 +1,19 @@
+
+
 # neural-network-analog-needle-readout
 Training and using a neural network to read out the value of an analog display - example including small node server for demonstration
 
 The readout is used in the [AI-on-the-edge-device](https://github.com/jomjol/AI-on-the-edge-device) project.
 
 An overview of all training images can be found at [jomjol.github.io/neural-network-analog-needle-readout](https://jomjol.github.io/neural-network-analog-needle-readout).
+
+## My (schaarw) Problem to solve 
+
+My problem was, that I have a temperature gauge I want to read and analyze, not a watermeter. I had to train with pictures of my gauge and of course I wanted to train by myself.
+I used Google Collab (https://colab.research.google.com/) to run the jupyter notebooks. 
+
+But Google Collabs runtime has higher versions of python and keras. The created models, also the ones generated with the original training data couldn't loaded by AI on the edge. The solution is to downgrade the keras module. 
+
 
 ## Problem to solve
 
@@ -26,8 +36,6 @@ Remark: technical the output is normalized to 1, so the expected value is betwee
 | Picture        | Value           | Picture        | Value           | Picture        | Value           | Picture        | Value           |
 | ------------- |:-------------:| ------------- |:-------------:|------------- |:-------------:| ------------- |:-------------:|
 | <img src="./docs/images/pointer1.jpg" width="80"> | 1.6 | <img src="./docs/images/pointer7.jpg" width="80"> | 7.4 |<img src="./docs/images/pointer3.jpg" width="80"> | 3.5 | <img src="./docs/images/pointer9.jpg" width="80"> | 9.2 |
-
-My (schaarw) problem was, that I have a temperature gauge I want to read and analyze, not a watermeter. I had to train with pictures of my gauge. I used Google Collab (https://colab.research.google.com/) to run the jupyter notebooks. But Google Collabs runtime has higher versions of python and keras. The created models, also the ones generated with the original training data couldn't loaded by AI on the edge. The solution is to downgrade the keras module. 
 
 ### Labeled Training Data
 
