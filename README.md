@@ -14,6 +14,8 @@ I used Google Collab (https://colab.research.google.com/) to run the jupyter not
 
 But Google Collabs runtime has higher versions of python and keras. The created models, also the ones generated with the original training data couldn't loaded by AI on the edge. The solution is to downgrade the keras module. 
 
+Different steps are listed in different jupyter notebooks. Persistance is achieved by mounting Googly Drive at the beginning of the jupyter notebook.
+
 
 ## Problem to solve
 
