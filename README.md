@@ -27,6 +27,7 @@ Remark: technical the output is normalized to 1, so the expected value is betwee
 | ------------- |:-------------:| ------------- |:-------------:|------------- |:-------------:| ------------- |:-------------:|
 | <img src="./docs/images/pointer1.jpg" width="80"> | 1.6 | <img src="./docs/images/pointer7.jpg" width="80"> | 7.4 |<img src="./docs/images/pointer3.jpg" width="80"> | 3.5 | <img src="./docs/images/pointer9.jpg" width="80"> | 9.2 |
 
+My (schaarw) problem was, that I have a temperature gauge I want to read and analyze, not a watermeter. I had to train with pictures of my gauge. I used Google Collab (https://colab.research.google.com/) to run the jupyter notebooks. But Google Collabs runtime has higher versions of python and keras. The created models, also the ones generated with the original training data couldn't loaded by AI on the edge. The solution is to downgrade the keras module. 
 
 ### Labeled Training Data
 
